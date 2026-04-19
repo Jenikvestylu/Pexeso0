@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#0D1B2A"
+    android:padding="8dp">
+
+    <!-- Počet tahů a nalezených párů -->
+    <TextView
+        android:id="@+id/tvInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tahy: 0  |  Páry: 0 / 16"
+        android:textColor="#E0F0FF"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:paddingBottom="4dp"/>
+
+    <!-- Nejlepší skóre -->
+    <TextView
+        android:id="@+id/tvBest"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nejlepší: -"
+        android:textColor="#FFD700"
+        android:textSize="13sp"
+        android:paddingBottom="4dp"/>
+
+    <!-- Hrací plocha 4 sloupce × 8 řádků -->
+    <GridLayout
+        android:id="@+id/grid"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:rowCount="8"
+        android:columnCount="4"/>
+
+    <!-- Tlačítko nová hra -->
+    <Button
+        android:id="@+id/btnRestart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:text="🔄 Nová hra"
+        android:backgroundTint="#1565C0"
+        android:textColor="#FFFFFF"/>
+
+</LinearLayout>
